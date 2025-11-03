@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #012c13;
+        }
+
+        .gambar {
+            width: 30%;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sidebar {
+            background: rgb(216, 214, 214);
+            color: rgb(134, 84, 63);
+            padding: 20px;
+            height: 750px;
+            line-height: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style-type: '🗡';
+            text-align: justify;
+        }
+
+        .content {
+            background: #fff;
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .p1 {
+            box-shadow: 10px 10px 10px gray;
+            margin-left: 200px;
+            background: rgb(115, 155, 122);
+            border-radius: 7px;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .footer {
+            background: #2c3e50;
+            text-align: center;
+            color: #fff;
+            height: 100px;
+            padding: 10px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(230, 57, 70, 0.2);
+            border: 1px solid rgba(230, 57, 70, 0.2);
+            gap: 20px;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tags span {
+            background: rgba(230, 57, 70, 0.2);
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            color: #ffb3b3;
+        }
+
+        .image {
+            width: 100%;
+            height: 70%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content .karakter-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="aot.png" class="gambar">
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>⚔Attack on Titan⚔</h3>
+            <ul>
+                <a href="aot.html">
+                    <li class="li1">BERANDA</li>
+                </a>
+                <a href="karakter.html">
+                    <li class="li1">KARAKTER</li>
+                </a>
+                <a href="galeri.html">
+                    <li class="li1">GALERI</li>
+                </a>
+                <a href="tentang.html">
+                    <li class="li1">TENTANG</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>KARAKTER</h1>
+            <div class="karakter-card">
+                <div class="card">
+                    <img class="image" src="lolipop.jpg" alt="Eren Yeager">
+                    <h2>Eren Yeager</h2>
+                    <p>Seorang prajurit dengn tekad kuat untuk menghancurkan semua titan demi kebebasan umat manusia.
+                    </p>
+                    <div class="tags">
+                        <span>Shifter</span>
+                        <span>Revenge</span>
+                        <span>Ferom</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="mikasa2.jpg" alt="Mikasa Ackerman">
+                    <h2>Mikasa Ackerman</h2>
+                    <p>Angota Pasukan Pengintai yang tangguh dan setia kepada Eren sejak kecil</p>
+                    <div class="tags">
+                        <span>Soldier</span>
+                        <span>Ackerman</span>
+                        <span>Loyal</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="kecap.jpg" alt="Levi Ackerman">
+                    <h2>Levi Ackerman</h2>
+                    <p>Captain Pasukan Pengintai yang dikenal sebagai prajurit terkuat umat manusia</p>
+                    <div class="tags">
+                        <span>Captain</span>
+                        <span>Strongest</span>
+                        <span>cool</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 - belajar membuat web - aot</p>
+    </div>
+</body>
+
+</html>
